@@ -1,0 +1,40 @@
+body {
+    background-color: #333333;
+    margin: 0px;
+    min-width: 800px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    display: grid;
+    grid-template-columns: 150px 40px 1fr 80px 150px;
+    grid-template-rows: 1fr 40px 1fr;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-icon {
+    grid-area: 2/2/3/3;
+}
+
+.nav-button {
+    grid-area: 2/4/3/5;
+}
+
+.nav-button-style {
+    background-color: #4080FF;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+}
